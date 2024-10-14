@@ -1,0 +1,151 @@
+h1, h2, h3, h4, p {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+h1 {
+    font-size: 15px;
+    color: darkred;
+}
+h2, h3, h4, p {
+    font-size: 12px;
+}
+h2, h3 {
+    font-weight: bold;
+}
+h3 {
+    font-style: italic;
+}
+h4 {
+    color: darkred;
+    padding-left: 15px;
+    font-weight: normal;
+}
+
+body {
+    background-color: #808080;
+}
+div.container {
+    border: 1px solid black;
+    width: 780px;
+    min-height: 500px;
+    margin: 0 auto;
+    font-family: Ariel, Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+
+
+.container header > img{
+    display: block;
+}
+.nav {
+    text-align: right;
+    text-transform: uppercase;
+    margin-top: .25rem;
+    margin-right:1rem;
+    padding-bottom: 10px;
+    font-size: 10px;
+    letter-spacing: .8px;
+}
+div.nav a {
+    text-decoration: none;
+    color: black;
+    margin: 1px;
+    padding: 2px;
+    letter-spacing: .8px;
+}
+div.nav a span {
+    text-decoration: none;
+}
+.nav span:after {
+    content: " |";
+}
+.nav span:last-of-type:after {
+    content: "";
+}
+.nav a img {
+    vertical-align: middle;
+}
+.nav a:hover {
+    text-decoration: underline;
+}
+.bottom {
+    font-size: 9px;
+    margin-top: 5rem;
+    text-transform: lowercase;
+}
+.middle {
+    display: flex;
+    justify-content: space-between;
+}
+div.box {
+    float: left;
+    display: flex;
+    width: 520px;
+    margin: 0 auto;
+}
+div.box-2 {
+    width: fill;
+}
+article.main {
+    min-height: 650px;
+    padding: 1.25rem;
+    width: 200px;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .faculty {
+        line-height: 20px;
+    }
+}
+div.contacts {
+
+}
+section.guts {
+    min-height: 500px;
+    width: 250px;
+    background-color: #d3d3bb;
+    margin: 0;
+    padding: 1rem 1.5rem;
+}
+
+
+aside {
+    width: 240px;
+    background-color: #dddddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+aside.nav-guts a{
+    color: black;
+    display:block;
+    padding: 10px;
+    margin: 0 25px;
+    border-bottom: 1px solid #737A3E;
+    text-decoration: none;
+    font-size: 11px;
+}
+aside.nav-guts a:hover {
+    background-color: darkred;
+    color: white;
+}
+
+aside.nav-guts img {
+    background-position: bottom;
+}
+
+aside div {
+    margin-top: 9rem;
+}
+
+footer {
+    min-height: 15px;
+    background-color: #737A3E;
+    color: white;
+    font-size: 9px;
+    padding: 6px;
+    text-align: center;
+
+}
