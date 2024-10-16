@@ -1,10 +1,11 @@
 h1, h2, h3, h4, p {
     margin: 0 auto;
     padding: 0 auto;
+    letter-spacing: .3px;
 }
 h1 {
     font-size: 15px;
-    color: darkred;
+    color: #aa0101;
 }
 h2, h3, h4, p {
     font-size: 12px;
@@ -14,11 +15,15 @@ h2, h3 {
 }
 h3 {
     font-style: italic;
+    font-size: 10px;
 }
 h4 {
-    color: darkred;
+    color: #b80101;
     padding-left: 15px;
     font-weight: normal;
+    line-height: 16px;
+    font-size: 11px;
+
 }
 
 body {
@@ -32,7 +37,6 @@ div.container {
     font-family: Ariel, Helvetica, sans-serif;
     background-color: #ffffff;
 }
-
 
 .container header > img{
     display: block;
@@ -80,17 +84,18 @@ div.nav a span {
 div.box {
     float: left;
     display: flex;
+    flex-grow: 1;
     width: 520px;
     margin: 0 auto;
 }
 div.box-2 {
-    width: fill;
+    width: 750px;
+
 }
 article.main {
     min-height: 650px;
     padding: 1.25rem;
     width: 200px;
-    background-color: blanchedalmond;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -98,32 +103,42 @@ article.main {
         line-height: 20px;
     }
 }
-div.contacts {
 
-}
 section.guts {
     min-height: 500px;
-    width: 250px;
-    background-color: #d3d3bb;
-    margin: 0;
-    padding: 1rem 1.5rem;
+    width: 600px;
+    margin: 0 auto;
+    padding: 1rem 0rem 0 1rem;
+    border-left: 1px dashed black;
+        img {
+            border-radius: 1rem;
+            width: 175px;
+            height: auto;
+            float: right;
+            word-wrap: break-word;
+            margin: .5rem;
+        }
+    h4 {
+        text-align: right;
+    }
 }
 
 
 aside {
-    width: 240px;
+    max-width: 225px;
     background-color: #dddddd;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-content: flex-start;
+
+
 }
 aside.nav-guts a{
     color: black;
     display:block;
     padding: 10px;
-    margin: 0 25px;
-    border-bottom: 1px solid #737A3E;
+    margin: 0 20px;
+    border-bottom: 1.5px solid #737A3E;
     text-decoration: none;
     font-size: 11px;
 }
@@ -133,15 +148,16 @@ aside.nav-guts a:hover {
 }
 
 aside.nav-guts img {
-    background-position: bottom;
+    margin-left: 2.25rem;
 }
 
 aside div {
-    margin-top: 9rem;
+    margin-top: 1rem;
+    margin-bottom: 3.5rem;
 }
 
 footer {
-    min-height: 15px;
+    height: 11px;
     background-color: #737A3E;
     color: white;
     font-size: 9px;
