@@ -1,4 +1,4 @@
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, p, a {
     margin: 0 auto;
     padding: 0 auto;
     letter-spacing: .3px;
@@ -7,8 +7,9 @@ h1 {
     font-size: 15px;
     color: #aa0101;
 }
-h2, h3, h4, p {
+h2 {
     font-size: 12px;
+
 }
 h2, h3 {
     font-weight: bold;
@@ -23,9 +24,14 @@ h4 {
     font-weight: normal;
     line-height: 16px;
     font-size: 11px;
-
 }
-
+p {
+    font-size: 11px;
+    hyphens: manual;
+    text-align: justify;
+    text-justify: inter-word;
+    letter-spacing: .2px;
+}
 body {
     background-color: #808080;
 }
@@ -37,7 +43,6 @@ div.container {
     font-family: Ariel, Helvetica, sans-serif;
     background-color: #ffffff;
 }
-
 .container header > img{
     display: block;
 }
@@ -87,56 +92,72 @@ div.box {
     flex-grow: 1;
     width: 520px;
     margin: 0 auto;
+        a {
+            color: #aa0101;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #ff0000;
+        }
 }
 div.box-2 {
     width: 750px;
-
 }
 article.main {
-    min-height: 650px;
+    min-height: 575px;
     padding: 1.25rem;
     width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    .faculty {
-        line-height: 20px;
-    }
+        .faculty {
+            line-height: 20px;
+
+        }
+        a {
+            text-decoration: none;
+        }
+        .contacts a {
+            color: black;
+        }
 }
 
 section.guts {
     min-height: 500px;
     width: 600px;
-    margin: 0 auto;
-    padding: 1rem 0rem 0 1rem;
+    margin: 0 0 1rem 0;
+    padding: 1rem 0rem 2rem 1rem;
     border-left: 1px dashed black;
         img {
             border-radius: 1rem;
             width: 175px;
             height: auto;
             float: right;
-            word-wrap: break-word;
-            margin: .5rem;
+            padding: 0.5rem 0rem 0.5rem 0.5rem;
         }
-    h4 {
-        text-align: right;
-    }
+        h4 {
+            text-align: right;
+        }
+        span {
+            font-size: 15px;
+            color: #aa0101;
+            font-weight: bold;
+        }
 }
-
-
 aside {
     max-width: 225px;
     background-color: #dddddd;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-
 }
-aside.nav-guts a{
+aside.nav-guts a {
     color: black;
     display:block;
     padding: 10px;
+    padding-right: 0;
     margin: 0 20px;
     border-bottom: 1.5px solid #737A3E;
     text-decoration: none;
@@ -163,5 +184,4 @@ footer {
     font-size: 9px;
     padding: 6px;
     text-align: center;
-
 }
